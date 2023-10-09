@@ -42,13 +42,13 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  F1  | F2  | F3  | F4  | F5  |  F6  |   | F7  | F8  | F9  | F10 | F11 | F12  |
-// | SHIFT| BT1 | BT2 | BT3 | BT4 | BT5  |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | CTRL |BTCLR|     | <<  | ||> | >>   |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+// | SHIFT| BT1 | BT2 | BT3 | BT4 | BTCLR|   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | CTRL |BTPRV|BTNXT| <<  | ||> | >>   |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC  |   |BSPC |     | ALT |
                         bindings = <
    &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-   &kp LSHFT &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3   &bt BT_SEL 4   &bt BT_SEL 5   &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
-   &kp LCTRL &bt BT_CLR   &trans &kp C_PREV   &kp C_PP   &kp C_NEXT      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+   &kp LSHFT &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3   &bt BT_SEL 4   &bt BT_CLR   &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
+   &kp LCTRL &bt BT_PRV   &bt BT_NXT &kp C_PREV   &kp C_PP   &kp C_NEXT      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
                              &kp LGUI &trans   &kp SPACE   &kp BSPC   &trans    &kp RALT
                         >;
                 };
