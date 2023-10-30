@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 &lt {
-    tapping-term-ms = <200>;
+    tapping-term-ms = <250>;
 };
 
 / {
@@ -59,12 +59,12 @@
 
                 gaming_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | DEL  |
+// |  ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | DEL  |
 // | SHIFT|  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
 // | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RET  |
 //                    | GUI | LWR | BSPC|   | SPC | RSE  | ALT |
                         bindings = <
-        &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
+        &kp ESC &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
         &trans &kp A &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
         &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
                              &kp LGUI &trans   &kp SPACE   &kp BSPC   &trans    &kp RALT
