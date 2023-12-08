@@ -31,12 +31,12 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC   |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |   * |  (  |  )  |  =  |
+// |  ESC   |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  (  |  )  |  *  |     |
 // | SHIFT  |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  UP |  8  |  9  |  0  |
 // | CTRL   |     |     |     |     |     |   | HOME| LFT | DWN | RGT | END |     |
 //                      | GUI |     | BSPC|   | SPC |     | ALT |
                         bindings = <
-        &kp ESC   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp EQUAL
+        &kp ESC   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp LPAR  &kp RPAR &kp KP_MULTIPLY &trans
         &kp LSHFT    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7 &kp UP  &kp N8 &kp N9    &kp N0
         &kp LCTRL  &trans       &trans       &trans       &trans       &trans         &kp HOME   &kp LEFT   &kp DOWN &kp RIGHT    &kp END &trans
                                     &mt LALT LGUI     &trans       &kp BSPC      &kp SPACE  &tog 3   &kp RALT
@@ -46,8 +46,8 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  F1  | F2  | F3  | F4  | F5  |  F6  |   | F7  | F8  | F9  | F10 | F11 | F12  |
-// | SHIFT| BT1 | BT2 | BT3 | BT4 | BTCLR|   |  -  |  =  |  {  |  }  |  \  |  `   |
-// | CTRL |BTPRV|BTNXT| <<  | ||> | >>   |   |  _  |  +  |  [  |  ]  | "|" |  ~   |
+// | SHIFT| BT1 | BT2 | BT3 | BT4 | BTCLR|   |  =  |  -  |  {  |  }  |  \  |  `   |
+// | CTRL |BTPRV|BTNXT| <<  | ||> | >>   |   |  +  |  _  |  [  |  ]  | "|" |  ~   |
 //                    | GUI |     | BSPC |   | SPC |     | RALT |
                         bindings = <
         &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
